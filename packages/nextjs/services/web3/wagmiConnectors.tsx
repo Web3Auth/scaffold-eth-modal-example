@@ -1,3 +1,4 @@
+import { rainbowWeb3AuthConnector } from "./web3AuthConnector";
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
 import {
   coinbaseWallet,
@@ -14,6 +15,7 @@ import scaffoldConfig from "~~/scaffold.config";
 const { onlyLocalBurnerWallet, targetNetworks } = scaffoldConfig;
 
 const wallets = [
+  rainbowWeb3AuthConnector,
   metaMaskWallet,
   walletConnectWallet,
   ledgerWallet,
